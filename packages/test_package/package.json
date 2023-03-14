@@ -12,14 +12,21 @@
     "node": ">=12.20.0"
   },
   "exports":{
-    "./accordion":"./dist/components/"
+    "./accordion":"./dist/accordion.cjs",
+    "./button":"./dist/button.cjs"
+  },
+  "typesVersions": {
+    "*":{
+      "accordion":["dist/accordion.d.ts"],
+      "button":["dist/button.d.ts"]
+    }
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "microbundle src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/",
+    "build": "rm -rf dist && microbundle src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "microbundle src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/",
+    "prepare": "rm -rf dist &&  microbundle src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
