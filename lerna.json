@@ -8,6 +8,6 @@
   "npmClientArgs": [
     "--legacy-peer-deps"
   ],
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "scope": ""
+  "scope": "test_package",
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
