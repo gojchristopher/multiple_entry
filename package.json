@@ -1,5 +1,5 @@
 {
-  "name": "sample-package",
+  "name": "multiple-entry-point-sample",
   "workspaces": [
     "packages/*"
   ],
