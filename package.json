@@ -1,5 +1,6 @@
 {
   "name": "multiple-entry-point-sample",
+  "private":false,
   "workspaces": [
     "packages/*"
   ],
