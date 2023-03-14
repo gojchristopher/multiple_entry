@@ -27,10 +27,10 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
+    "build": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "rm -rf dist &&  microbundle src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
+    "prepare": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
