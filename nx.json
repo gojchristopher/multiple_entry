@@ -1,0 +1,38 @@
+{
+    "extends": "nx/presets/npm.json",
+    "tasksRunnerOptions": {
+      "default": {
+        "runner": "@nrwl/nx-cloud",
+        "options": {
+          "cacheableOperations": [
+            "build",
+            "test",
+            "lint",
+            "prepare",
+            "size",
+            "analyze",
+            "storybook",
+            "build-storybook",
+            "generate:types"
+          ],
+          "accessToken": "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"
+        }
+      }
+    },
+    "targetDefaults": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "prepare": {
+        "dependsOn": [
+          "^prepare"
+        ]
+      }
+    },
+    "affected": {
+      "defaultBase": "master"
+    }
+  }
+  
