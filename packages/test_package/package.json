@@ -50,7 +50,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@multiple-entry-point-sample/test_package",
+  "name": "@microbundle-sample-package/test_package",
   "author": "John Christopher Go",
   "module": "dist/test_package.esm.js",
   "size-limit": [
