@@ -1,13 +1,9 @@
 {
   "useWorkspaces": true,
-  "packages": [
-    "packages/**"
-  ],
+  "packages": ["packages/*"],
   "version": "independent",
   "npmClient": "npm",
-  "npmClientArgs": [
-    "--legacy-peer-deps"
-  ],
-  "scope": "test_package",
+  "npmClientArgs": ["--legacy-peer-deps"],
+  "scope": "./test_package",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
