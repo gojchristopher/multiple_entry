@@ -1,5 +1,6 @@
 {
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "dist",
     "declaration": true,
@@ -7,7 +8,7 @@
     "target": "ESNext",
     "moduleResolution": "nodenext"
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "node_modules/microbundle/index.d.ts"],
   "exclude": [
     "node_modules",
     "build",
