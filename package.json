@@ -2,7 +2,7 @@
   "name": "microbundle-sample-package",
   "private":false,
   "workspaces": [
-    "packages/*"
+    "packages/**"
   ],
   "scripts": {
     "storybook": "start-storybook -p 4004",
