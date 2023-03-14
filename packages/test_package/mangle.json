@@ -1,5 +1,5 @@
 {
-    "mangle": {
-        "regex":"^_"
-    }
+  "mangle": {
+    "regex": "^_"
+  }
 }
