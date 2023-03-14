@@ -4,6 +4,5 @@
   "version": "independent",
   "npmClient": "npm",
   "useNx": true,
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "npmClientArgs": ["--legacy-peer-deps"]
 }
