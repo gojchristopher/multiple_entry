@@ -11,14 +11,18 @@
   "engines": {
     "node": ">=12.20.0"
   },
-  "exports":{
-    "./accordion":"./dist/accordion.cjs",
-    "./button":"./dist/button.cjs"
+  "exports": {
+    "./accordion": "./dist/accordion.cjs",
+    "./button": "./dist/button.cjs"
   },
   "typesVersions": {
-    "*":{
-      "accordion":["dist/accordion.d.ts"],
-      "button":["dist/button.d.ts"]
+    "*": {
+      "accordion": [
+        "dist/accordion.d.ts"
+      ],
+      "button": [
+        "dist/button.d.ts"
+      ]
     }
   },
   "scripts": {
