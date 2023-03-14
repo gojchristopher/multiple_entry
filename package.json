@@ -1,5 +1,5 @@
 {
-  "name": "microbundle-sample-package",
+  "name": "multiple-entry",
   "private": false,
   "workspaces": [
     "packages/**"
