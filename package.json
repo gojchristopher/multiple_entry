@@ -1,6 +1,5 @@
 {
   "name": "sample-package",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
