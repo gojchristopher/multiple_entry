@@ -49,7 +49,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@multiple-entry/test_package",
+  "name": "@go-test-packages/test_package",
   "author": "John Christopher Go",
   "module": "dist/test_package.esm.js",
   "size-limit": [
