@@ -1,5 +1,5 @@
 {
-  "version": "0.0.11",
+  "version": "0.0.12",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
@@ -28,6 +28,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
+    "prepare": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
