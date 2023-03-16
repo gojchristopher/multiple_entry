@@ -16,16 +16,21 @@
       "node": "./dist/accordion.cjs",
       "import": "./dist/accordion.modern.js"
     },
+    "./accordion-option": {
+      "node": "./dist/accordion.cjs",
+      "import": "./dist/accordion.modern.js"
+    },
     "./button": "./dist/button.cjs"
   },
   "typesVersions": {
     "*": {
       "accordion": [
-        "dist/accordion.d.ts"
+        "dist/src/accordion.d.ts"
       ],
       "button": [
-        "dist/button.d.ts"
-      ]
+        "dist/src/button.d.ts"
+      ],
+      "accordion-option":["dist/src/accordion-options.d.ts"]
     }
   },
   "scripts": {
