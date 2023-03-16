@@ -3,7 +3,6 @@
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
-  "type": "module",
   "files": [
     "dist",
     "src"
@@ -13,14 +12,14 @@
   },
   "exports": {
     "./accordion": {
-      "node": "./dist/accordion.cjs",
-      "import": "./dist/accordion.modern.js"
+      "node": "./dist/accordion.js",
+      "import": "./dist/accordion.esm.js"
     },
     "./accordionTypes-type": {
-      "node": "./dist/accordionTypes-type.cjs",
-      "import": "./dist/accordionTypes-type.modern.js"
+      "node": "./dist/accordionTypes-type.js",
+      "import": "./dist/accordionTypes-type.esm.js"
     },
-    "./button": "./dist/button.cjs"
+    "./button": "./dist/button.js"
   },
   "typesVersions": {
     "*": {
@@ -37,7 +36,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs,modern",
+    "build": "rm -rf dist && microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ ",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
@@ -52,9 +51,6 @@
     "hooks": {
       "pre-commit": "tsdx lint"
     }
-  },
-  "mangle": {
-    "regex": "^_"
   },
   "prettier": {
     "printWidth": 80,
