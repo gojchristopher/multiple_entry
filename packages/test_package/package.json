@@ -17,7 +17,7 @@
       "import": "./dist/accordion.modern.js"
     },
     "./accordionTypes-type": {
-      "node": "./dist/accordionTypes-type.js",
+      "node": "./dist/accordionTypes-type.cjs",
       "import": "./dist/accordionTypes-type.modern.js"
     },
     "./button": "./dist/button.js"
