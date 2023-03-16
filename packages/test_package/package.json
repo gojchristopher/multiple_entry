@@ -1,5 +1,5 @@
 {
-  "version": "0.0.10",
+  "version": "0.0.11",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
@@ -13,8 +13,9 @@
   },
   "exports": {
     "./accordion": {
-      "node":"./dist/accordion.cjs",
-      "import":"./dist/accordion.modern.js"},
+      "node": "./dist/accordion.cjs",
+      "import": "./dist/accordion.modern.js"
+    },
     "./accordionTypes-type": {
       "node": "./dist/accordionTypes-type.js",
       "import": "./dist/accordionTypes-type.modern.js"
