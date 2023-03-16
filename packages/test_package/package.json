@@ -1,5 +1,5 @@
 {
-  "version": "0.0.9",
+  "version": "0.0.10",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
@@ -29,7 +29,7 @@
       ]
     }
   },
-  "sideEffects":false,
+  "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --gzip --minify",
