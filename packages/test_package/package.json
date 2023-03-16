@@ -30,7 +30,7 @@
       "button": [
         "dist/src/button.d.ts"
       ],
-      "accordionTypes-type": [
+      "accordionTypes-types": [
         "dist/src/accordionTypes-types.d.ts"
       ]
     }
