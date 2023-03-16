@@ -29,10 +29,11 @@
       ]
     }
   },
+  "sideEffects":false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --compress",
-    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --compress",
+    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --gzip --minify",
+    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --gzip --minify",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
@@ -67,10 +68,6 @@
       "limit": "10 KB"
     }
   ],
-  "devDependencies": {
-    "rollup-plugin-typescript2": "^0.34.1",
-    "ttypescript": "^1.5.15"
-  },
   "publishConfig": {
     "access": "public"
   },
