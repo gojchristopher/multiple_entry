@@ -12,11 +12,10 @@
     "jsx": "react",
     "jsxFragmentFactory": "React.Fragment"
   },
-  "include": ["src/**/*", "node_modules/microbundle/index.d.ts"],
+  "include": ["src"],
   "exclude": [
     "node_modules",
     "build",
-    "src/**/*.stories.tsx",
-    "src/**/*.test.tsx"
+    "**/*.stories.tsx", "**/*.test.tsx", "**/*.spec.tsx"
   ]
 }
