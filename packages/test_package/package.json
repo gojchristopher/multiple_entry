@@ -1,5 +1,5 @@
 {
-  "version": "0.0.9",
+  "version": "0.0.10",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
@@ -69,5 +69,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "fc33b6ef086f5ed59dae8324d43d23a1edb51db7"
+  "gitHead": "b6b155840d42b175e7aa043ce93ad2dc709a4ada"
 }
