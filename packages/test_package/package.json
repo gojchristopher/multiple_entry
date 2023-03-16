@@ -12,9 +12,20 @@
     "node": ">=12.20.0"
   },
   "exports": {
-    "./accordion": "./dist/accordion.cjs",
-    "./accordionTypes-types": "./dist/accordionTypes-types.cjs",
-    "./button": "./dist/button.js"
+    "./accordion": {
+      "node": "./dist/accordion.cjs",
+      "import": "./dist/accordion.modern.js",
+      "types": "./dist/src/accordion.d.ts"
+    },
+    "./accordionTypes-types": {
+      "node": "./dist/accordionTypes-types.cjs",
+      "import": "./dist/accordionTypes-types.modern.js",
+      "types": "./dist/src/accordionTypes-types.d.ts"
+    },
+    "./button": {
+      "node": "./dist/button.cjs",
+      "import": "./dist/button.modern.js"
+    }
   },
   "typesVersions": {
     "*": {
@@ -32,8 +43,8 @@
   "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --gzip --minify",
-    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs --gzip --minify",
+    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --gzip --minify",
+    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --gzip --minify",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
