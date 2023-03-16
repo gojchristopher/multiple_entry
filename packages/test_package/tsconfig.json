@@ -8,6 +8,7 @@
     "target": "ESNext",
     "allowSyntheticDefaultImports": true,
     "jsxFactory": "React.createElement",
+    "sourceMap": false,
     "jsx": "react",
     "jsxFragmentFactory": "React.Fragment"
   },
