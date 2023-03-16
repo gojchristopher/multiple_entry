@@ -11,13 +11,10 @@
     "node": ">=12.20.0"
   },
   "exports": {
-    "./accordion": {
-      "node": "./dist/accordion.js",
-      "import": "./dist/accordion.esm.js"
-    },
+    "./accordion": "./dist/accordion.modern.mjs",
     "./accordionTypes-type": {
       "node": "./dist/accordionTypes-type.js",
-      "import": "./dist/accordionTypes-type.esm.js"
+      "import": "./dist/accordionTypes-type.modern.mjs"
     },
     "./button": "./dist/button.js"
   },
@@ -36,7 +33,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ ",
+    "build": "rm -rf dist && microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f modern",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
