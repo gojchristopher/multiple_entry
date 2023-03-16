@@ -28,7 +28,6 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
-    "prepare": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
@@ -70,5 +69,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "b6b155840d42b175e7aa043ce93ad2dc709a4ada"
+  "gitHead": "40189c6f8ebb276a522728c4e6345c9679cd306c"
 }
