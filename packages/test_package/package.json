@@ -30,7 +30,6 @@
     "build": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs",
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
@@ -70,5 +69,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "84b01c4778c6daa53a864edf86dc787a8e0d0bf7"
+  "gitHead": "fc33b6ef086f5ed59dae8324d43d23a1edb51db7"
 }
