@@ -16,9 +16,9 @@
       "node": "./dist/accordion.cjs",
       "import": "./dist/accordion.modern.js"
     },
-    "./accordion-option": {
-      "node": "./dist/accordion.cjs",
-      "import": "./dist/accordion.modern.js"
+    "./accordionTypes-type": {
+      "node": "./dist/accordionTypes-type.cjs",
+      "import": "./dist/accordionTypes-type.modern.js"
     },
     "./button": "./dist/button.cjs"
   },
@@ -30,8 +30,8 @@
       "button": [
         "dist/src/button.d.ts"
       ],
-      "accordion-option": [
-        "dist/src/accordion-options.d.ts"
+      "accordionTypes-type": [
+        "dist/src/accordionTypes-type.d.ts"
       ]
     }
   },
