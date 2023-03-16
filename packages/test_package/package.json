@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
@@ -53,8 +53,8 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "mangle":{
-    "regex":"^_"
+  "mangle": {
+    "regex": "^_"
   },
   "prettier": {
     "printWidth": 80,
