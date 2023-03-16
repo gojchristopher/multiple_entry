@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs,modern",
+    "build": "rm -rf dist && microbundle build src/*.tsx --jsx React.createElement --jsxFragment React.Fragment -o dist/ -f cjs,modern",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
