@@ -1,3 +1,6 @@
-import { Accordion } from '@chakra-ui/react';
-
-export default Accordion;
+export {
+  Accordion,
+  AccordionButton,
+  AccordionPanel,
+  AccordionItem,
+} from '@chakra-ui/react';

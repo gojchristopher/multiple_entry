@@ -53,6 +53,9 @@
       "pre-commit": "tsdx lint"
     }
   },
+  "mangle":{
+    "regex":"^_"
+  },
   "prettier": {
     "printWidth": 80,
     "semi": true,
