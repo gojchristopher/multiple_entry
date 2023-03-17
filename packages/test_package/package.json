@@ -47,7 +47,7 @@
   "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br",
+    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
