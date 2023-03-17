@@ -17,18 +17,18 @@
   },
   "exports": {
     "./accordion": {
-      "node": "./dist/accordion.cjs.br",
-      "import": "./dist/accordion.modern.js.br",
+      "node": "./dist/accordion.cjs",
+      "import": "./dist/accordion.modern.js",
       "types": "./dist/src/accordion.d.ts"
     },
     "./accordionTypes-types": {
-      "node": "./dist/accordionTypes-types.cjs.br",
-      "import": "./dist/accordionTypes-types.modern.js.br",
+      "node": "./dist/accordionTypes-types.cjs",
+      "import": "./dist/accordionTypes-types.modern.js",
       "types": "./dist/src/accordionTypes-types.d.ts"
     },
     "./button": {
-      "node": "./dist/button.cjs.br",
-      "import": "./dist/button.modern.js.br"
+      "node": "./dist/button.cjs",
+      "import": "./dist/button.modern.js"
     }
   },
   "typesVersions": {
