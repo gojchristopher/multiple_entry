@@ -4,11 +4,5 @@
   "useWorkspaces": true,
   "version": "independent",
   "scope": "@gojchristopher",
-  "useNx": true,
-  "command": {
-    "publish":{
-      "before":["npm run build"],
-      "message":"Publishing packages to npm..."
-    }
-  }
+  "useNx": true
 }
