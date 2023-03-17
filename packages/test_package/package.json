@@ -18,11 +18,11 @@
   "exports": {
     "./accordion": {
       "require": "./dist/accordion.cjs",
-      "default": "./dist/accordion.modern.js"
+      "default": "./dist/accordion.modern.js.br"
     },
     "./accordionTypes-types": {
       "require": "./dist/accordionTypes-types.cjs",
-      "default": "./dist/accordionTypes-types.modern.js"
+      "default": "./dist/accordionTypes-types.modern.js.br"
     },
     "./button": {
       "require": "./dist/button.cjs",
@@ -45,8 +45,8 @@
   "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br",
-    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br",
+    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br --compress",
+    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br --compress",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
