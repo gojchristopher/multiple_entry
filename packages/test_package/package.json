@@ -15,16 +15,16 @@
   },
   "exports": {
     "./accordion": {
-      "require": "./dist/accordion.js.br",
-      "default": "./dist/accordion.modern.mjs.br"
+      "node": "./dist/accordion.js.br",
+      "import": "./dist/accordion.modern.mjs.br"
     },
     "./accordionTypes-types": {
-      "require": "./dist/accordionTypes-types.js.br",
-      "default": "./dist/accordionTypes-types.modern.mjs.br"
+      "node": "./dist/accordionTypes-types.js.br",
+      "import": "./dist/accordionTypes-types.modern.mjs.br"
     },
     "./button": {
-      "require": "./dist/button.js.br",
-      "default": "./dist/button.modern.mjs.br"
+      "node": "./dist/button.js.br",
+      "import": "./dist/button.modern.mjs.br"
     }
   },
   "typesVersions": {
@@ -68,7 +68,7 @@
   },
   "name": "@gojchristopher/test_package",
   "author": "John Christopher Go",
-  "module": "dist/test_package.modern.mjs",
+  "module": "dist/test_package.modern.mjs.br",
   "size-limit": [
     {
       "path": "dist/test_package.cjs.production.min.js",
