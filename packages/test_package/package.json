@@ -1,7 +1,7 @@
 {
   "version": "0.0.23",
   "license": "MIT",
-  "main": "dist/test_packages.cjs.bz",
+  "main": "dist/test_packages.cjs",
   "typings": "dist/index.d.ts",
   "type": "module",
   "files": [
@@ -46,6 +46,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br",
+    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
