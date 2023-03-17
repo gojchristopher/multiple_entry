@@ -1,27 +1,30 @@
 {
   "version": "0.0.26",
   "license": "MIT",
-  "main": "dist/test_packages.js",
+  "main": "dist/test_packages.js.br",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
-    "src"
+    "src",
+    "dist/*.modern.js.br",
+    "dist/*.js.br",
+    "dist/*.mjs.map.br"
   ],
   "engines": {
     "node": ">=12.20.0"
   },
   "exports": {
     "./accordion": {
-      "require": "./dist/accordion.js",
-      "default": "./dist/accordion.modern.mjs"
+      "require": "./dist/accordion.js.br",
+      "default": "./dist/accordion.modern.mjs.br"
     },
     "./accordionTypes-types": {
-      "require": "./dist/accordionTypes-types.js",
-      "default": "./dist/accordionTypes-types.modern.mjs"
+      "require": "./dist/accordionTypes-types.js.br",
+      "default": "./dist/accordionTypes-types.modern.mjs.br"
     },
     "./button": {
-      "require": "./dist/button.js",
-      "default": "./dist/button.modern.mjs"
+      "require": "./dist/button.js.br",
+      "default": "./dist/button.modern.mjs.br"
     }
   },
   "typesVersions": {
