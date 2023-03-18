@@ -1,31 +1,27 @@
 {
   "version": "0.0.31",
   "license": "MIT",
-  "main": "dist/test_packages.js.br",
-  "typings": "dist/index.d.ts",
-  "type": "module",
+  "main": "dist/test_packages.js",
+  "typings": "dist/src/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "dist/*.modern.js.br",
-    "dist/*.js.br",
-    "dist/*.mjs.map.br"
+    "src"
   ],
   "engines": {
     "node": ">=12.20.0"
   },
   "exports": {
     "./accordion": {
-      "node": "./dist/accordion.cjs",
-      "import": "./dist/accordion.modern.br"
+      "require": "./dist/accordion.js",
+      "default": "./dist/accordion.modern.js"
     },
     "./accordionTypes-types": {
-      "node": "./dist/accordionTypes-types.cjs",
-      "import": "./dist/accordionTypes-types.modern.js.br"
+      "require": "./dist/accordionTypes-types.js",
+      "default": "./dist/accordionTypes-types.modern.js"
     },
     "./button": {
-      "node": "./dist/button.cjs",
-      "import": "./dist/button.modern.js.br"
+      "require": "./dist/button.js",
+      "default": "./dist/button.modern.js"
     }
   },
   "typesVersions": {
@@ -44,7 +40,7 @@
   "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --br --compress",
+    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern,  --compress",
     "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --compress",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
