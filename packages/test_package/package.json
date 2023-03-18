@@ -15,16 +15,16 @@
   },
   "exports": {
     "./accordion": {
-      "node": "./dist/accordion.js.br",
-      "import": "./dist/accordion.modern.mjs.br"
+      "node": "./dist/accordion.js",
+      "import": "./dist/accordion.modern.mjs"
     },
     "./accordionTypes-types": {
-      "node": "./dist/accordionTypes-types.js.br",
-      "import": "./dist/accordionTypes-types.modern.mjs.br"
+      "node": "./dist/accordionTypes-types.js",
+      "import": "./dist/accordionTypes-types.modern.mjs"
     },
     "./button": {
-      "node": "./dist/button.js.br",
-      "import": "./dist/button.modern.mjs.br"
+      "node": "./dist/button.js",
+      "import": "./dist/button.modern.mjs"
     }
   },
   "typesVersions": {
