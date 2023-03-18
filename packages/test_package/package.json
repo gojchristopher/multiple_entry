@@ -1,7 +1,7 @@
 {
   "version": "0.0.30",
   "license": "MIT",
-  "main": "dist/test_packages.js",
+  "main": "dist/test_packages.js.br",
   "typings": "dist/index.d.ts",
   "type": "module",
   "files": [
@@ -17,15 +17,15 @@
   "exports": {
     "./accordion": {
       "node": "./dist/accordion.cjs",
-      "import": "./dist/accordion.modern.js"
+      "import": "./dist/accordion.modern.br"
     },
     "./accordionTypes-types": {
       "node": "./dist/accordionTypes-types.cjs",
-      "import": "./dist/accordionTypes-types.modern.js"
+      "import": "./dist/accordionTypes-types.modern.js.br"
     },
     "./button": {
       "node": "./dist/button.cjs",
-      "import": "./dist/button.modern.js"
+      "import": "./dist/button.modern.js.br"
     }
   },
   "typesVersions": {
@@ -69,7 +69,7 @@
   },
   "name": "@gojchristopher/test_package",
   "author": "John Christopher Go",
-  "module": "dist/test_package.modern.js",
+  "module": "dist/test_package.esm.js",
   "size-limit": [
     {
       "path": "dist/test_package.cjs.production.min.js",
