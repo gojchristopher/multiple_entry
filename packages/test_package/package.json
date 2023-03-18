@@ -3,6 +3,7 @@
   "license": "MIT",
   "main": "dist/test_packages.js",
   "typings": "dist/src/index.d.ts",
+  "type": "module",
   "files": [
     "dist",
     "src"
@@ -12,15 +13,18 @@
   },
   "exports": {
     "./accordion": {
-      "require": "./dist/accordion.js",
-      "default": "./dist/accordion.modern.js"
+      "node": "./dist/accordion.cjs",
+      "import": "./dist/accordion.modern.js",
+      "default":"./dist/accordion.modern.js"
     },
     "./accordionTypes-types": {
-      "require": "./dist/accordionTypes-types.js",
+      "node": "./dist/accordionTypes-types.cjs",
+      "import": "./dist/accordionTypes-types.modern.js",
       "default": "./dist/accordionTypes-types.modern.js"
     },
     "./button": {
-      "require": "./dist/button.js",
+      "node": "./dist/button.cjs",
+      "import": "./dist/button.modern.js",
       "default": "./dist/button.modern.js"
     }
   },
@@ -40,8 +44,8 @@
   "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern,  --compress",
-    "prepare": "rm -rf dist && microbundle build src/*.tsx -o dist/ -f cjs,modern --compress",
+    "build": "rm -rf dist && microbundle src/*.tsx -f cjs,modern  --compress",
+    "prepare": "rm -rf dist && microbundle src/*.tsx -f cjs,modern --compress",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
@@ -65,17 +69,7 @@
   },
   "name": "@gojchristopher/test_package",
   "author": "John Christopher Go",
-  "module": "dist/test_package.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/test_package.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/test_package.esm.js",
-      "limit": "10 KB"
-    }
-  ],
+  "module": "dist/test_package.modern.js",
   "publishConfig": {
     "access": "public"
   },
