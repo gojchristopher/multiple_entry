@@ -1,7 +1,7 @@
 {
   "version": "0.0.33",
   "license": "MIT",
-  "main": "dist/test_packages.js",
+  "main": "dist/test_packages.cjs",
   "typings": "dist/src/index.d.ts",
   "type": "module",
   "files": [
@@ -15,33 +15,19 @@
     "./accordion": {
       "node": "./dist/accordion.cjs",
       "import": "./dist/accordion.modern.js",
-      "default": "./dist/accordion.modern.js"
+      "types":"./dist/src/accordion.d.ts"
     },
     "./accordionTypes-types": {
       "node": "./dist/accordionTypes-types.cjs",
       "import": "./dist/accordionTypes-types.modern.js",
-      "default": "./dist/accordionTypes-types.modern.js"
+      "types":"./dist/src/accordionTypes-types.d.ts"
     },
     "./button": {
       "node": "./dist/button.cjs",
       "import": "./dist/button.modern.js",
-      "default": "./dist/button.modern.js"
+      "types":"./dist/src/button.d.ts"
     }
   },
-  "typesVersions": {
-    "*": {
-      "accordion": [
-        "dist/src/accordion.d.ts"
-      ],
-      "button": [
-        "dist/src/button.d.ts"
-      ],
-      "accordionTypes-types": [
-        "dist/src/accordionTypes-types.d.ts"
-      ]
-    }
-  },
-  "sideEffects": false,
   "scripts": {
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle src/*.tsx -f cjs,modern  --compress",
