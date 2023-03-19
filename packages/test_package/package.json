@@ -27,6 +27,16 @@
       "import": "./dist/button.modern.js",
       "types": "./dist/src/button.d.ts"
     }
+  },"typesVersions": {
+    "accordion":{
+      "*": ["dist/src/accordion.d.ts"]
+    },
+    "accordionTypes-types":{
+      "*": ["dist/src/accordionTypes-types.d.ts"]
+    },
+    "button":{
+      "*": ["dist/src/button.d.ts"]
+    }
   },
   "scripts": {
     "start": "tsdx watch",
