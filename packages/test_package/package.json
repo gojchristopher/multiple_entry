@@ -29,18 +29,14 @@
     }
   },
   "typesVersions": {
-    "accordion": {
-      "*": [
+    "*": {
+      "accordion": [
         "dist/src/accordion.d.ts"
-      ]
-    },
-    "accordionTypes-types": {
-      "*": [
+      ],
+      "accordionTypes-types": [
         "dist/src/accordionTypes-types.d.ts"
-      ]
-    },
-    "button": {
-      "*": [
+      ],
+      "button": [
         "dist/src/button.d.ts"
       ]
     }
