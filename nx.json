@@ -6,7 +6,6 @@
       "options": {
         "cacheableOperations": [
           "start",
-          "build",
           "test",
           "lint",
           "size",
