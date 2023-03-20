@@ -1,22 +1,20 @@
 {
-  "extends": "../../tsconfig.json",
+  "include": ["src", "types"],
   "compilerOptions": {
-    "outDir": "dist",
-    "declarationDir": "dist",
-    "declaration": true,
     "module": "ESNext",
     "target": "ESNext",
     "allowSyntheticDefaultImports": true,
     "jsxFactory": "React.createElement",
     "sourceMap": false,
     "jsx": "react",
+    "moduleResolution": "nodenext",
     "jsxFragmentFactory": "React.Fragment"
   },
-  "include": ["src"],
   "exclude": [
     "node_modules",
-    "build", "**/*.stories.tsx", 
-    "**/*.test.tsx", 
+    "build",
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
     "**/*.spec.tsx"
   ]
 }
