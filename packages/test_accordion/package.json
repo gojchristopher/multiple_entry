@@ -1,5 +1,5 @@
 {
-  "version": "0.1.12",
+  "version": "0.1.13",
   "license": "MIT",
   "main": "dist/test_accordion.cjs",
   "module": "dist/test_accordion.esm.js",
@@ -14,8 +14,8 @@
   },
   "exports": {
     ".": {
-        "node":"./dist/test_accordion.esm.js",
-        "import":"./dist/test_accordion.modern.js"
+      "node": "./dist/test_accordion.esm.js",
+      "import": "./dist/test_accordion.modern.js"
     },
     "./accordionTypes": {
       "node": "./dist/accordionType-types.cjs",
