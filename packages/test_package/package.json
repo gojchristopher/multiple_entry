@@ -40,7 +40,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle -i src/*.tsx --tsconfig ./tsconfig.json -f cjs,modern",
+    "build": "rm -rf dist && microbundle -i src/*.tsx -f cjs,modern -o dist/",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
