@@ -42,6 +42,9 @@
   "peerDependencies": {
     "react": ">=16"
   },
+  "devDependencies": {
+    "size-limit": "^8.2.4"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"

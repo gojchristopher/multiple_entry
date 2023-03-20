@@ -48,6 +48,9 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
+  "devDependencies": {
+    "size-limit": "^8.2.4"
+  },
   "peerDependencies": {
     "react": ">=16"
   },
