@@ -6,7 +6,7 @@
   "useNx": true,
   "commands":{
     "publish":{
-      "before":["npx lerna build"],
+      "before":["npm run build"],
       "noPrepare":true,
       "message":"Publishing packages to npm..."
     }
