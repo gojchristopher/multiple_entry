@@ -1,5 +1,5 @@
 {
-  "version": "0.1.4",
+  "version": "0.1.5",
   "license": "MIT",
   "main": "dist/accordion.umd.js",
   "module": "dist/test_accordion.modern.js",
@@ -13,7 +13,7 @@
     "node": ">=10"
   },
   "exports": {
-    ".":"./dist/test_accordion.modern.js",
+    ".": "./dist/test_accordion.modern.js",
     "./accordionTypes": "./dist/accordionType-types.modern.js"
   },
   "typesVersions": {
