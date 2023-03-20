@@ -1,5 +1,5 @@
 {
-  "version": "0.0.36",
+  "version": "0.0.37",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/src/index.d.ts",
@@ -11,10 +11,10 @@
   "engines": {
     "node": ">=12.20.0"
   },
-  "browser":{
-    "./dist/test_package.cjs":"./dist/test_package.cjs.br?brotli=true",
-    "./dist/accordion.cjs":"./dist/accordion.cjs.br?brotli=true",
-    "./dist/accordionTypes-types":"./dist/accordionTypes-types.cjs.br?brotli=true"
+  "browser": {
+    "./dist/test_package.cjs": "./dist/test_package.cjs.br?brotli=true",
+    "./dist/accordion.cjs": "./dist/accordion.cjs.br?brotli=true",
+    "./dist/accordionTypes-types": "./dist/accordionTypes-types.cjs.br?brotli=true"
   },
   "exports": {
     "./accordion": {
