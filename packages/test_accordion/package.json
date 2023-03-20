@@ -1,32 +1,46 @@
 {
-  "version": "0.1.10",
+  "version": "0.1.20",
   "license": "MIT",
-  "main": "dist/test_accordion.js",
-  "module": "dist/test_accordion.modern.mjs",
-  "typings": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12.20.0"
   },
+  "sideEffect": false,
   "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
     "./accordionTypes": {
-      "node": "./dist/accordionType-types.js",
-      "import": "./dist/accordionType-types.modern.mjs"
+      "require": "./dist/accordionType-types.js",
+      "import": "./dist/accordionType-types.mjs",
+      "types": "./dist/accordionType-types.d.ts"
     }
   },
   "typesVersions": {
     "*": {
       "accordionTypes": [
-        "dist/src/accordionType-types.d.ts"
+        "dist/accordionType-types.d.ts"
       ]
     }
   },
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle -i src/*.tsx -f cjs,modern -o dist/",
+    "build": "rm -rf dist && tsup src --dts --treeshake",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
@@ -52,7 +66,11 @@
   "author": "John Christopher Go",
   "size-limit": [
     {
-      "path": "dist/test_accordion.modern.mjs",
+      "path": "dist/test_accordion.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/test_accordion.mjs",
       "limit": "10 KB"
     }
   ],

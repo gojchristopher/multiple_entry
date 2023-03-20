@@ -15,12 +15,13 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.0",
-    "@types/react": "^18.0.28",
     "@nrwl/nx-cloud": "latest",
+    "@types/react": "^18.0.28",
     "lerna": "^6.5.1",
     "microbundle": "^0.15.1",
     "nx": "^15.8.6",
     "tsdx": "^0.14.1",
+    "tsup": "^6.7.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
