@@ -1,5 +1,5 @@
 {
-  "version": "0.1.10",
+  "version": "0.1.11",
   "license": "MIT",
   "main": "dist/test_accordion.cjs",
   "module": "dist/test_accordion.esm.js",
@@ -13,9 +13,9 @@
     "node": ">=10"
   },
   "exports": {
-    ".":{
-        "node":"./dist/test_accordion.cjs",
-        "import":"./dist/test_accordion.modern.js"
+    ".": {
+      "node": "./dist/test_accordion.cjs",
+      "import": "./dist/test_accordion.modern.js"
     },
     "./accordionTypes": {
       "node": "./dist/accordionType-types.cjs",
@@ -57,8 +57,8 @@
   "author": "John Christopher Go",
   "size-limit": [
     {
-        "path":"dist/test_accordion.cjs",
-        "limit":"10 KB"
+      "path": "dist/test_accordion.cjs",
+      "limit": "10 KB"
     },
     {
       "path": "dist/test_accordion.esm.js",

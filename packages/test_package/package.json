@@ -1,5 +1,5 @@
 {
-  "version": "0.0.47",
+  "version": "0.0.48",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/src/index.d.ts",
@@ -67,8 +67,8 @@
   "module": "dist/test_package.esm.js",
   "size-limit": [
     {
-      "path":"dist/test_package.cjs",
-      "limit":"10 KB"
+      "path": "dist/test_package.cjs",
+      "limit": "10 KB"
     },
     {
       "path": "dist/test_package.esm.js",
