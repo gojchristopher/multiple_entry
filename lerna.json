@@ -4,7 +4,7 @@
   "useWorkspaces": true,
   "version": "independent",
   "useNx": true,
-  "commands":{
+  "command":{
     "publish":{
       "before":["npm run build"],
       "noPrepare":true,
