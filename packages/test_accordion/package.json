@@ -1,8 +1,8 @@
 {
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "main": "dist/test_accordion.js",
-  "umd:main":"dist/test_accordion.umd.js",
+  "umd:main": "dist/test_accordion.umd.js",
   "module": "dist/test_accordion.modern.js",
   "typings": "dist/src/index.d.ts",
   "files": [
