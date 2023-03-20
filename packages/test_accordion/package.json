@@ -1,9 +1,9 @@
 {
   "version": "0.1.17",
   "license": "MIT",
-  "main": "dist/test_accordion.cjs",
-  "module": "dist/test_accordion.esm.js",
-  "typings": "dist/src/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -34,7 +34,7 @@
   "typesVersions": {
     "*": {
       "accordionTypes": [
-        "dist/src/accordionType-types.d.ts"
+        "dist/accordionType-types.d.ts"
       ]
     }
   },
