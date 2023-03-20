@@ -1,4 +1,5 @@
 {
+  "extends": "../../tsconfig.json",
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "ESNext",
@@ -7,7 +8,6 @@
     "jsxFactory": "React.createElement",
     "sourceMap": false,
     "jsx": "react",
-    "moduleResolution": "nodenext",
     "jsxFragmentFactory": "React.Fragment"
   },
   "exclude": [
