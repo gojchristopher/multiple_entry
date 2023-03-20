@@ -1,9 +1,8 @@
 {
   "version": "0.0.46",
   "license": "MIT",
-  "main": "dist/test_packages.cjs",
+  "main": "dist/test_packages.js",
   "typings": "dist/src/index.d.ts",
-  "type": "module",
   "files": [
     "dist",
     "src"
@@ -13,15 +12,15 @@
   },
   "exports": {
     "./accordion": {
-      "node": "./dist/accordion.cjs",
-      "import": "./dist/accordion.modern.js"
+      "node": "./dist/accordion.js",
+      "import": "./dist/accordion.modern.mjs"
     },
     "./accordionTypes-types": {
-      "node": "./dist/accordionTypes-types.cjs",
-      "import": "./dist/accordionTypes-types.modern.js"
+      "node": "./dist/accordionTypes-types.js",
+      "import": "./dist/accordionTypes-types.modern.mjs"
     },
     "./button": {
-      "node": "./dist/button.cjs",
+      "node": "./dist/button.js",
       "import": "./dist/button.modern.js"
     }
   },
@@ -62,9 +61,15 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@gojchristopher/test_package",
+  "name": "@opensourcerist/test_package",
   "author": "John Christopher Go",
-  "module": "dist/test_package.modern.js",
+  "module": "dist/test_package.modern.mjs",
+  "size-limit": [
+    {
+      "path": "dist/test_package.modern.mjs",
+      "limit": "10 KB"
+    }
+  ],
   "publishConfig": {
     "access": "public"
   },

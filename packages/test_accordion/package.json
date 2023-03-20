@@ -2,8 +2,7 @@
   "version": "0.1.8",
   "license": "MIT",
   "main": "dist/test_accordion.js",
-  "umd:main": "dist/test_accordion.umd.js",
-  "module": "dist/test_accordion.modern.js",
+  "module": "dist/test_accordion.modern.mjs",
   "typings": "dist/src/index.d.ts",
   "files": [
     "dist",
@@ -13,8 +12,10 @@
     "node": ">=10"
   },
   "exports": {
-    ".": "./dist/test_accordion.modern.js",
-    "./accordionTypes": "./dist/accordionType-types.modern.js"
+    "./accordionTypes": {
+      "node": "./dist/accordionType-types.js",
+      "import": "./dist/accordionType-types.modern.mjs"
+    }
   },
   "typesVersions": {
     "*": {
@@ -25,7 +26,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle -i src/*.tsx -f cjs,umd,modern -o dist/",
+    "build": "rm -rf dist && microbundle -i src/*.tsx -f cjs,modern -o dist/",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
@@ -47,15 +48,11 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@gojchristopher/test_accordion",
+  "name": "@opensourcerist/test_accordion",
   "author": "John Christopher Go",
   "size-limit": [
     {
-      "path": "dist/test_accordion.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/test_accordion.modern.js",
+      "path": "dist/test_accordion.modern.mjs",
       "limit": "10 KB"
     }
   ],
