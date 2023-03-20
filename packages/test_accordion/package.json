@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=12.20.0"
   },
-  "sideEffect": false,
+  "sideEffects": false,
   "exports": {
     ".": {
       "require": "./dist/index.js",
