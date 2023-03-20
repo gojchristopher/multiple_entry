@@ -13,6 +13,7 @@
     "node": ">=10"
   },
   "exports": {
+    ".":"./dist/test_accordion.modern.js",
     "./accordionTypes": "./dist/accordionType-types.modern.js"
   },
   "typesVersions": {
