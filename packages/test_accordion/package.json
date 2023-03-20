@@ -14,7 +14,7 @@
   },
   "exports": {
     ".": {
-      "node": "./dist/test_accordion.esm.js",
+      "node": "./dist/test_accordion.cjs",
       "import": "./dist/test_accordion.modern.js"
     },
     "./accordionTypes": {

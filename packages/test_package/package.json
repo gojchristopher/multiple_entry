@@ -12,14 +12,6 @@
     "node": ">=12.20.0"
   },
   "exports": {
-    "./accordion": {
-      "node": "./dist/accordion.cjs",
-      "import": "./dist/accordion.modern.js"
-    },
-    "./accordionTypes-types": {
-      "node": "./dist/accordionTypes-types.cjs",
-      "import": "./dist/accordionTypes-types.modern.js"
-    },
     "./button": {
       "node": "./dist/button.cjs",
       "import": "./dist/button.modern.js"
