@@ -3,5 +3,11 @@
   "packages": ["packages/**"],
   "useWorkspaces": true,
   "version": "independent",
-  "useNx": true
+  "useNx": true,
+  "commands":{
+    "publish":{
+      "before":["npx lerna build"],
+      "message":"Publishing packages to npm..."
+    }
+  }
 }
