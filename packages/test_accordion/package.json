@@ -1,24 +1,24 @@
 {
   "version": "0.1.19",
   "license": "MIT",
-  "main": "dist/test_accordion.js",
+  "main": "dist/test_accordion.cjs",
   "module": "dist/test_accordion.mjs",
   "typings": "dist/index.d.ts",
+  "type": "module",
   "files": [
     "dist"
   ],
   "engines": {
     "node": ">=12.20.0"
   },
-  "sideEffect": false,
   "exports": {
     ".": {
-      "require": "./dist/test_accordion.js",
+      "require": "./dist/test_accordion.cjs",
       "import": "./dist/test_accordion.mjs",
       "types": "./dist/src/index.d.ts"
     },
     "./accordionTypes": {
-      "require": "./dist/accordionType-types.js",
+      "require": "./dist/accordionType-types.cjs",
       "import": "./dist/accordionType-types.mjs",
       "types": "./dist/src/accordionType-types.d.ts"
     }
