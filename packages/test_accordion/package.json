@@ -1,5 +1,5 @@
 {
-  "version": "0.1.16",
+  "version": "0.1.17",
   "license": "MIT",
   "main": "dist/test_accordion.cjs",
   "module": "dist/test_accordion.esm.js",
@@ -21,14 +21,14 @@
   "sideEffect": false,
   "exports": {
     ".": {
-        "require":"./dist/index.js",
-        "import":"./dist/index.mjs",
-        "types":"./dist/index.d.ts"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     },
     "./accordionTypes": {
       "require": "./dist/accordionType-types.js",
       "import": "./dist/accordionType-types.mjs",
-      "types":"./dist/accordionType-types.d.ts"
+      "types": "./dist/accordionType-types.d.ts"
     }
   },
   "typesVersions": {
