@@ -1,38 +1,46 @@
 {
   "version": "0.1.20",
   "license": "MIT",
-  "main": "dist/test_accordion.cjs",
-  "module": "dist/test_accordion.mjs",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
-  "type": "module",
   "files": [
     "dist"
   ],
   "engines": {
     "node": ">=12.20.0"
   },
+  "sideEffect": false,
   "exports": {
     ".": {
-      "require": "./dist/test_accordion.cjs",
-      "import": "./dist/test_accordion.mjs",
-      "types": "./dist/src/index.d.ts"
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     },
     "./accordionTypes": {
-      "require": "./dist/accordionType-types.cjs",
+      "require": "./dist/accordionType-types.js",
       "import": "./dist/accordionType-types.mjs",
-      "types": "./dist/src/accordionType-types.d.ts"
+      "types": "./dist/accordionType-types.d.ts"
     }
   },
   "typesVersions": {
     "*": {
       "accordionTypes": [
-        "dist/src/accordionType-types.d.ts"
+        "dist/accordionType-types.d.ts"
       ]
     }
   },
+  "tsup": {
+    "clean": true,
+    "target": "es2019",
+    "format": [
+      "cjs",
+      "esm"
+    ]
+  },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle src/*.tsx -f cjs,modern,esm -o dist/",
+    "build": "rm -rf dist && tsup src --dts --treeshake",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
