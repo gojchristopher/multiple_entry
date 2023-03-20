@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "MIT",
   "main": "dist/accordion.cjs",
   "typings": "dist/src/index.d.ts",
@@ -11,15 +11,17 @@
   "engines": {
     "node": ">=10"
   },
-  "exports":{
-    "./accordionTypes":{
-        "node":"./dist/accordionType-types.cjs",
-        "import":"./dist/accordionType-types.modern.js"
+  "exports": {
+    "./accordionTypes": {
+      "node": "./dist/accordionType-types.cjs",
+      "import": "./dist/accordionType-types.modern.js"
     }
   },
   "typesVersions": {
     "*": {
-        "accordionTypes": ["dist/src/accordionType-types.d.ts"]
+      "accordionTypes": [
+        "dist/src/accordionType-types.d.ts"
+      ]
     }
   },
   "scripts": {
