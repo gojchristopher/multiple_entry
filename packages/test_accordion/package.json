@@ -13,6 +13,10 @@
     "node": ">=10"
   },
   "exports": {
+    ".": {
+        "node":"./dist/test_accordion.esm.js",
+        "import":"./dist/test_accordion.modern.js"
+    },
     "./accordionTypes": {
       "node": "./dist/accordionType-types.cjs",
       "import": "./dist/accordionType-types.modern.js"
