@@ -30,19 +30,6 @@
       "import": "./dist/button.modern.js"
     }
   },
-  "typesVersions": {
-    "*": {
-      "accordion": [
-        "dist/src/accordion.d.ts"
-      ],
-      "accordionTypes-types": [
-        "dist/src/accordionTypes-types.d.ts"
-      ],
-      "button": [
-        "dist/src/button.d.ts"
-      ]
-    }
-  },
   "scripts": {
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle -i src/*.tsx --tsconfig ./tsconfig.json -f cjs,modern",
