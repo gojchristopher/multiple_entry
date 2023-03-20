@@ -5,8 +5,7 @@
   "typings": "dist/src/index.d.ts",
   "type": "module",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "engines": {
     "node": ">=12.20.0"
