@@ -36,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "test_accordion",
+  "name": "@gojchristopher/test_accordion",
   "author": "gojchristopher.github.io",
   "module": "dist/test_accordion.modern.js",
   "size-limit": [
