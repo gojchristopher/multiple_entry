@@ -1,5 +1,5 @@
 {
-  "version": "0.0.43",
+  "version": "0.0.42",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/src/index.d.ts",
@@ -10,11 +10,6 @@
   ],
   "engines": {
     "node": ">=12.20.0"
-  },
-  "browser": {
-    "./dist/test_package.cjs": "./dist/test_package.cjs.br?brotli=true",
-    "./dist/accordion.cjs": "./dist/accordion.cjs.br?brotli=true",
-    "./dist/accordionTypes-types": "./dist/accordionTypes-types.cjs.br?brotli=true"
   },
   "exports": {
     "./accordion": {
@@ -28,6 +23,19 @@
     "./button": {
       "node": "./dist/button.cjs",
       "import": "./dist/button.modern.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "accordion": [
+        "dist/src/accordion.d.ts"
+      ],
+      "accordionTypes-types": [
+        "dist/src/accordionTypes-types.d.ts"
+      ],
+      "button": [
+        "dist/src/button.d.ts"
+      ]
     }
   },
   "scripts": {
@@ -60,5 +68,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e4ff8224355723c1e03c9e46af16e263cec241c8"
+  "gitHead": "8edf8dc88d2271ddcdc3a9f0a14d9274596215e8"
 }
