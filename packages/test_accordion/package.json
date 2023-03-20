@@ -1,10 +1,10 @@
 {
   "version": "0.1.5",
   "license": "MIT",
-  "main": "dist/accordion.umd.js",
+  "main": "dist/test_accordion.js",
+  "umd:main":"dist/test_accordion.umd.js",
   "module": "dist/test_accordion.modern.js",
   "typings": "dist/src/index.d.ts",
-  "type": "module",
   "files": [
     "dist",
     "src"
@@ -13,7 +13,6 @@
     "node": ">=10"
   },
   "exports": {
-    ".": "./dist/test_accordion.modern.js",
     "./accordionTypes": "./dist/accordionType-types.modern.js"
   },
   "typesVersions": {
@@ -25,7 +24,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "rm -rf dist && microbundle -i src/*.tsx -f umd,modern -o dist/",
+    "build": "rm -rf dist && microbundle -i src/*.tsx -f cjs,umd,modern -o dist/",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
