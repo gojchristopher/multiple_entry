@@ -1,6 +1,6 @@
 {
   "extends": "../../tsconfig.json",
-  "include": ["src", "types"],
+  "include": ["src"],
   "compilerOptions": {
     "module": "ESNext",
     "target": "ESNext",
@@ -9,7 +9,7 @@
     "declarationDir": "dist",
     "outDir": "dist",
     "declaration": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "jsx": "react",
     "jsxFragmentFactory": "React.Fragment"
   },
