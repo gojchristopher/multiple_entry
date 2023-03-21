@@ -1,5 +1,5 @@
 {
-  "version": "0.0.51",
+  "version": "0.0.52",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/src/index.d.ts",
@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=12.20.0"
   },
-  "sideEffects":false,
+  "sideEffects": false,
   "exports": {
     "./button": {
       "node": "./dist/button.cjs",
