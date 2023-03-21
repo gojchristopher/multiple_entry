@@ -1,5 +1,5 @@
 {
-  "version": "0.0.50",
+  "version": "0.0.51",
   "license": "MIT",
   "main": "dist/test_packages.cjs",
   "typings": "dist/src/index.d.ts",
@@ -10,7 +10,7 @@
   "engines": {
     "node": ">=12.20.0"
   },
-  "sideEffects":[
+  "sideEffects": [
     "@chakra-ui/react"
   ],
   "exports": {
