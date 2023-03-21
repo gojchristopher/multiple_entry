@@ -18,13 +18,6 @@
       "import": "./dist/accordionType-types.modern.js"
     }
   },
-  "typesVersions": {
-    "*": {
-      "accordionTypes": [
-        "dist/src/accordionType-types.d.ts"
-      ]
-    }
-  },
   "scripts": {
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle -i src/** -f cjs,modern,esm -o dist/ --compress",
