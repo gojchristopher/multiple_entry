@@ -16,6 +16,20 @@
     "./accordionTypes": {
       "node": "./dist/accordionType-types.cjs",
       "import": "./dist/accordionType-types.modern.js"
+    },
+    "./accordionBody": {
+      "node": "./dist/accordionBody.cjs",
+      "import": "./dist/accordionBody.modern.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "accordionBody": [
+        "dist/src/accordionBody.d.ts"
+      ],
+      "accordionType-types": [
+        "dist/src/accordionType-types.d.ts"
+      ]
     }
   },
   "scripts": {
