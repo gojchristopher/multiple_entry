@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "rm -rf dist && microbundle -i src/** -f cjs,modern,esm -o dist/ --compress",
+    "prepublish": "rm -rf dist && microbundle -i src/** -f cjs,modern,esm -o dist/ --compress",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "test_drawer",
+  "author": "gojchristopher.github.io",
+  "module": "dist/test_drawer.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/test_drawer.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/test_drawer.esm.js",
+      "limit": "10 KB"
+    }
+  ]
+}
