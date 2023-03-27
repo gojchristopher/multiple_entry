@@ -33,6 +33,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle -i src/*.tsx -f cjs,modern,esm -o dist/",
+    "prepublish": "rm -rf dist && microbundle -i src/** -f cjs,modern,esm -o dist/ --compress",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "size": "size-limit",
