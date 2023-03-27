@@ -36,7 +36,6 @@
     "start": "tsdx watch",
     "build": "rm -rf dist && microbundle -i src/** -f cjs,modern,esm -o dist/ --compress",
     "test": "tsdx test --passWithNoTests",
-    "prepublish": "rm -rf dist && microbundle -i src/** -f cjs,modern,esm -o dist/ --compress",
     "lint": "tsdx lint",
     "size": "size-limit",
     "analyze": "size-limit --why",
